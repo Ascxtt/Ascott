@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Developer Portfolio</title>
+    <!-- Materialize CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="nav-wrapper blue-grey darken-4">
+      <div class="container">
+        <a href="#" class="brand-logo">Romaine Ascott</a>
+        <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <ul class="sidenav" id="mobile-menu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+    </ul>
+
+    <!-- Hero Section -->
+    <section
+      class="section center-align blue-grey darken-3 white-text"
+      id="hero"
+    >
+      <div class="container">
+        <h2>Romaine Ascott</h2>
+        <p>Software Developer</p>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+      <div class="container">
+        <h4>About Me</h4>
+        <p>
+          A highly motivated software developer with extensive expertise in
+          various programming languages and development tools. My goal is to
+          utilize my skills to contribute to the advancement in technological
+          solutions while also continually advancing my own capabilities.
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section blue-grey lighten-5" id="projects">
+      <div class="container">
+        <h4>Projects</h4>
+        <div class="row">
+          <div class="col s12 m6 l4">
+            <div class="card">
+              <a href="https://pinvent-app-umber.vercel.app/">
+                <div class="card-image">
+                  <img
+                    src="images/Screenshot 2024-08-16 214751.png"
+                    alt="Project 1"
+                  />
+                </div>
+                <div class="card-content">
+                  <span class="card-title">Inventory Management Web App</span>
+                  <p>
+                    An intuitive Inventory Management App designed to streamline
+                    stock tracking, reduce manual errors, and improve
+                    efficiency. Manage products, monitor inventory levels all in
+                    one user-friendly interface. Perfect for businesses looking
+                    to optimize their supply chain and ensure accurate,
+                    real-time inventory management.
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col s12 m6 l4">
+            <div class="card">
+              <a href="https://ascott-task-manager-app.onrender.com/">
+                <div class="card-image">
+                  <img
+                    src="images/Screenshot 2024-08-16 214822.png"
+                    alt="Project 2"
+                  />
+                </div>
+                <div class="card-content">
+                  <span class="card-title">Task Manager</span>
+                  <p>
+                    A simple yet powerful Task Manager App that helps you
+                    organize, prioritize, and track your daily tasks with ease.
+                    Stay on top of deadlines, set reminders, and manage your
+                    to-do lists efficiently. Whether for personal or
+                    professional use, this app ensures you stay productive and
+                    focused, making task management effortless.
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- Add more project cards as needed -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+      <div class="container">
+        <h4>Skills</h4>
+        <div class="chips">
+          <div class="chip">JavaScript</div>
+          <div class="chip">React</div>
+          <div class="chip">Node.js</div>
+          <div class="chip">HTML & CSS</div>
+          <div class="chip">Mongo DB</div>
+          <div class="chip">ExpressJS</div>
+          <div class="chip">UI/UX Design Integration</div>
+          <div class="chip">GIT</div>
+          <div class="chip">Responsive Design</div>
+          <div class="chip">Problem Solving and Debugging</div>
+          <div class="chip">Communication</div>
+          <div class="chip">Adaptability</div>
+          <div class="chip">Teamwork</div>
+          <div class="chip">Agile</div>
+          <div class="chip">Scrum</div>
+          <!-- Add more chips as needed -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="section center-align blue-grey darken-4 white-text">
+      <p>&copy; 2024 Romaine Ascott. All rights reserved.</p>
+    </footer>
+
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+
+    <script>
+      // Initialize sidenav for mobile view
+      document.addEventListener("DOMContentLoaded", function () {
+        const elems = document.querySelectorAll(".sidenav");
+        M.Sidenav.init(elems);
+      });
+    </script>
+  </body>
+</html>
